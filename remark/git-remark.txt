@@ -19,5 +19,16 @@
 
 4、在分支上提交
 	
-	$git add /remark/git-remark
+	$git add /remark/git-remark.txt //将文件增加到git上  也可以直接使用git add .  这样增加所有的文件
+	$git push    //将文件推送到github上
+	$git commit -m 提交git-remark.txt文件     //将git-remark.txt文件提交到服务器。-m 后面表示本次提交内容的一个备注
+	$git status  //查看本地仓库的状态
+
+
+5、 合并分支
+	$git checkout master  //指向主分支
+	$git merge snailDev   //合并snailDev分支
+
+6、删除分支
+	$git branch -d snailDev //删除snailDev分支
 
