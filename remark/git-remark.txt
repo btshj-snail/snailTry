@@ -1,0 +1,23 @@
+1、在github创建一个新的仓库。记住最后仓库地址，比如：https://github.com/btshj/snailTry
+
+2、打开文件系统，在想要放该仓库的地方创建仓库。
+比如：
+	$d:    //打开D盘      
+	$cd projectCode  //进入d:projectCode文件夹
+	$git clone https://github.com/btshj/snailTry  //将snialTry仓库克隆到projectCode文件夹中，此时系统会在projectCode文件夹下面生成一个snailTry文件夹，并且其中含有.git文件夹以及git的一些其他信息
+
+
+3、创建git分支
+首先进入d:projectCode/snailTry文件夹下
+
+	$git branch snailDev //创建了一个名字叫做snailDev的分支
+	$git branch          //查看该工程下的所有分支
+	$git checkout snailDev //将工程指向snailDev分支
+	----------------------------------------------------------------------------
+	以上三个步骤其实可以合并为一个
+	$git branch -b snailDev  //创建一个名字叫做snailDev的分支，并且指向该分支。
+
+4、在分支上提交
+	
+	$git add /remark/git-remark
+
