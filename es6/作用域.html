@@ -10,7 +10,23 @@
 			let str = "我是块级作用域";
 			console.log("在块内访问:"+str)
 		}
-		console.log("在块外访问:"+str);
+		try{
+			console.log("在块外访问:"+str);
+
+		}catch(e){
+			
+		}
+		
+		const str1 = "我是常量的，不能改的";
+		console.log("修改常量前："+str1);
+		try{
+			str1 = "改改嘛";
+		}catch(e){
+
+		}
+		console.log("修改常量后："+str1);
+		
+
 	</script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>解构</title>
+</head>
+<body>
+	<script>
+		var ary = ["苹果","梨子","香蕉","李子","荔枝"];
+		{
+			let [a,b,c] = ary;
+			console.log(a,b,c);
+		}
+		{
+			let [a,...b] = ary;
+		console.log(b)
+		}
+		
+
+		console.log("解构对象")
+		var obj = {name:"jack",age:14};
+		var {name:nameEl} = obj;
+		var {age:ageEl} = obj;
+		console.log(nameEl,ageEl);
+		console.log("解构对象:属性名和变量名一致时可以省略其中一个")
+		var {name} = obj;
+		var {age} = obj;
+		console.log(name,age)
+
+		console.log("解构对象:一起写")
+		{
+			let {name:nameEl,age:ageEl} = obj;
+			console.log(nameEl,ageEl);
+		}
+	</script>
+</body>
+</html>
