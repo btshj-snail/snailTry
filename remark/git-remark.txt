@@ -28,7 +28,9 @@
 5、 合并分支
 	$git checkout master  //指向主分支
 	$git merge snailDev   //合并snailDev分支
+	$git push             //提交到github上面
 
 6、删除分支
 	$git branch -d snailDev //删除snailDev分支
+
 
