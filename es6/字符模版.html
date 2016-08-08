@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>字符模版</title>
+</head>
+<body>
+	<script>
+		let name = "Jack",age =18;
+		let str = 	`${name}今年才${age}岁`;
+		let salary = 1000;
+		console.log(str);
+		let str1 = `${name}今年才
+		${age}岁，工资竟然${salary}`;
+		console.log(str1)
+
+		let str2 = changeMoneyFomart`${name}今年才
+		${age}岁，工资竟然${salary}`;
+
+		function changeMoneyFomart(strings,...values){
+			let result = "";
+			for (var i = 0; i < values.length; i++) {
+				result +=strings[i];
+				result +=values[i];
+			}
+			result += strings[strings.length-1];
+			return result;
+		}
+		console.log(str2);
+	</script>
+</body>
+</html>
