@@ -1,0 +1,25 @@
+/*@font-face {*/
+    /*font-family: 'Source-Han-Ligh-base';*/
+    /*src:url('compile/font-aboutUs.gif');*/
+    /*src:url('compile/font-aboutUs.gif?#iefix') format('embedded-opentype');*/
+    /*src:url('compile/font-aboutUs.bmp') format('woff');*/
+    /*src:url('compile/font-aboutUs.jpg') format('truetype');*/
+    /*src:url('compile/font-aboutUs.png#Source-Han-Light') format('svg');*/
+/*}*/
+
+@font-face {
+    font-family: 'Source-Han-Ligh-base';
+    src: url('compile/font-sport.eot'); /* IE9sport Compat Modes */
+    src: url('compile/font-sport.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('compile/font-sport.woff') format('woff'), /* Modern Browsers */
+         url('compile/font-sport.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('compile/font-sport.svg#Source-Han-Ligh-base') format('svg'); /* Legacy iOS */
+}
+
+.baseFont{
+    font-family: 'Source-Han-Ligh-base';
+}
+
+.baseFont1{
+    font-family: "微软雅黑";
+}
